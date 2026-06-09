@@ -22,7 +22,6 @@ export default function Projects() {
     return () => observer.disconnect()
   }, [])
 
-  // All 17 projects mapped directly from CV
   const projects = [
     {
       id: 1,

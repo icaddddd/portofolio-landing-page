@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { ArrowDown } from "lucide-react"
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -47,9 +47,12 @@ export default function Hero() {
               className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-lg animate-slideInUp"
               style={{ animationDelay: "0.3s" }}
             >
-              Fullstack Developer with experience in building web applications using Node.js, Golang, Next.js, React, and NestJS.
-Fast learner, adaptable, and passionate about creating reliable, high-quality solutions.
-Comfortable working on both frontend and backend, collaborating with teams, developing applications and maintaining production-ready systems.
+              Fullstack Developer with experience in building web applications
+              using Node.js, Golang, Next.js, React, and NestJS. Fast learner,
+              adaptable, and passionate about creating reliable, high-quality
+              solutions. Comfortable working on both frontend and backend,
+              collaborating with teams, developing applications and maintaining
+              production-ready systems.
             </p>
 
             <div

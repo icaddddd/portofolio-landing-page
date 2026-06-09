@@ -28,7 +28,7 @@ export default function Certifications() {
       title: "Dumbways Certificate of Completion",
       issuer: "Dumbways.id",
       date: "December 2023",
-      credentialUrl: "#",
+      credentialUrl: "/certificate-dumbways.pdf",
     },
   ]
 

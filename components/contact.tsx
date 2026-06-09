@@ -17,7 +17,10 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 animate-slideInUp" style={{ animationDelay: "0.1s" }}>
+        <div
+          className="grid md:grid-cols-2 gap-8 animate-slideInUp"
+          style={{ animationDelay: "0.1s" }}
+        >
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative bg-card/50 backdrop-blur border border-primary/10 hover:border-primary/30 rounded-xl p-8 transition-all duration-300">
@@ -27,7 +30,9 @@ export default function Contact() {
                 </div>
                 <h3 className="text-2xl font-semibold">Email</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm">Send me an email anytime</p>
+              <p className="text-muted-foreground mb-4 text-sm">
+                Send me an email anytime
+              </p>
               <a
                 // href="mailto:rhisjaddjvtr@gmail.com"
                 // target="_blank"
@@ -51,7 +56,9 @@ export default function Contact() {
                 </div>
                 <h3 className="text-2xl font-semibold">WhatsApp</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm">Chat with me instantly</p>
+              <p className="text-muted-foreground mb-4 text-sm">
+                Chat with me instantly
+              </p>
               <a
                 href="https://wa.me/6282292555447"
                 target="_blank"
@@ -67,16 +74,34 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="mt-16 animate-slideInUp" style={{ animationDelay: "0.2s" }}>
+        <div
+          className="mt-16 animate-slideInUp"
+          style={{ animationDelay: "0.2s" }}
+        >
           <h3 className="text-2xl font-semibold mb-8 text-center">Follow Me</h3>
           <div className="flex justify-center gap-4 flex-wrap">
             {[
-              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sjaaf-djavatri/", color: "hover:text-blue-400" },
-              { icon: Github, label: "GitHub", href: "https://github.com/icaddddd", color: "hover:text-gray-400" },
+              {
+                icon: Linkedin,
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/sjaaf-djavatri/",
+                color: "hover:text-blue-400",
+              },
+              {
+                icon: Github,
+                label: "GitHub",
+                href: "https://github.com/icaddddd",
+                color: "hover:text-gray-400",
+              },
               // { icon: Twitter, label: "Twitter", href: "#", color: "hover:text-blue-300" },
-              { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/sjaafrhisjad_/", color: "hover:text-pink-400" },
+              {
+                icon: Instagram,
+                label: "Instagram",
+                href: "https://www.instagram.com/sjaafrhisjad_/",
+                color: "hover:text-pink-400",
+              },
             ].map((social) => {
-              const Icon = social.icon
+              const Icon = social.icon;
               return (
                 <a
                   key={social.label}
@@ -92,14 +117,18 @@ export default function Contact() {
                     className="relative transition-transform group-hover:scale-125 group-hover:-translate-y-1"
                   />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
 
-        <div className="mt-12 text-center animate-slideInUp" style={{ animationDelay: "0.3s" }}>
+        <div
+          className="mt-12 text-center animate-slideInUp"
+          style={{ animationDelay: "0.3s" }}
+        >
           <a
-            href="#"
+            href="/resume.pdf"
+            target="_blank"
             className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold transition-all duration-300 hover:bg-accent hover:shadow-lg hover:shadow-accent/50 hover:scale-105 transform"
           >
             Download Resume
@@ -107,5 +136,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

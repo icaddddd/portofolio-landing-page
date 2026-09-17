@@ -1,6 +1,8 @@
 "use client";
 
 import { ArrowDown } from "lucide-react";
+import { personalInfo } from "@/lib/data";
+import DownloadCV from "./download-cv";
 
 export default function Hero() {
   return (
@@ -33,13 +35,13 @@ export default function Hero() {
           >
             <div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-2 leading-tight">
-                Sjaaf Rhisjad Daud Djavatri
+                {personalInfo.name}
               </h1>
               <p
                 className="text-xl sm:text-2xl text-primary font-semibold animate-slideInDown"
                 style={{ animationDelay: "0.4s" }}
               >
-                Fullstack IT Programmer
+                {personalInfo.title}
               </p>
             </div>
 
@@ -47,18 +49,14 @@ export default function Hero() {
               className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-lg animate-slideInUp"
               style={{ animationDelay: "0.3s" }}
             >
-              Fullstack Developer with experience in building web applications
-              using Node.js, Golang, Next.js, React, and NestJS. Fast learner,
-              adaptable, and passionate about creating reliable, high-quality
-              solutions. Comfortable working on both frontend and backend,
-              collaborating with teams, developing applications and maintaining
-              production-ready systems.
+              {personalInfo.bio}
             </p>
 
             <div
               className="flex flex-wrap gap-3 animate-slideInUp"
               style={{ animationDelay: "0.4s" }}
             >
+              <DownloadCV />
               <a
                 href="#contact"
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-all duration-200 hover:shadow-lg hover:shadow-primary/50 hover:scale-105 transform"

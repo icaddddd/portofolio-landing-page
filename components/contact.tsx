@@ -1,6 +1,7 @@
 "use client"
 
 import { Mail, ExternalLink, MessageCircle, Github, Linkedin, Twitter, Instagram } from "lucide-react"
+import DownloadCV from "./download-cv";
 
 export default function Contact() {
   return (
@@ -126,13 +127,7 @@ export default function Contact() {
           className="mt-12 text-center animate-slideInUp"
           style={{ animationDelay: "0.3s" }}
         >
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold transition-all duration-300 hover:bg-accent hover:shadow-lg hover:shadow-accent/50 hover:scale-105 transform"
-          >
-            Download Resume
-          </a>
+          <DownloadCV />
         </div>
       </div>
     </section>

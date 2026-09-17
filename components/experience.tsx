@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Calendar, Building } from "lucide-react"
+import { experiences } from "@/lib/data"
 
 export default function Experience() {
   const [isVisible, setIsVisible] = useState(false)
@@ -21,36 +22,6 @@ export default function Experience() {
 
     return () => observer.disconnect()
   }, [])
-
-  const experiences = [
-    {
-      id: 1,
-      role: "Fullstack Developer",
-      company: "PT. K-Link Nusantara",
-      period: "2023 - Present",
-      description:
-        "Worked on maintaining and improving e-commerce platforms and internal tools by refactoring backend services to enhance performance and reliability. Led the development of a new international application, including an admin dashboard and bonus calculation system. Optimized database queries and built automated data processing using scheduled scripts and ETL workflows. Collaborated closely with data warehouse and business analyst teams to ensure data accuracy, and created technical documentation for data pipelines and processes. Also developed backend messaging services in Golang supporting WhatsApp, Email, Telegram, and other channels.",
-      skills: ["React", "Node.js", "Nest.js", "Next.js", "Express.js", "Golang", "PostgreSQL", "MySQL", "Typescript/Javascript", "Git", "Tailwind CSS", "Prisma", "TypeORM", "Sequelize", "PHP"],
-    },
-    {
-      id: 2,
-      role: "Freelance Developer",
-      company: "Self-employed",
-      period: "2023 - Present",
-      description:
-        "Developed and maintained multiple web applications, implemented new features, and conducted code reviews.",
-      skills: ["React", "Node.js", "Next.js", "Nest.js", "Express.js", "MongoDB", "PostgreSQL", "MySQL", "Docker", "Git", "Tailwind CSS", "Typescript/Javascript", "Railway", "Prisma", "TypeORM", "Sequelize", "Docker"],
-    },
-    {
-      id: 2,
-      role: "Head of Barista - Supervisor",
-      company: "PT. Roemah Kita Boga",
-      period: "2019 - 2023",
-      description:
-        "Maintaining and improving bar product and stock, and ensuring quality control and customer satisfaction, managing 15+ employees., responsible for purchasing and inventory management.",
-      skills: ["Highest Revenue", "Latte Art"],
-    },
-  ]
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30">

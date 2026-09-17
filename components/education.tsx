@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { GraduationCap, Calendar } from "lucide-react"
+import { education } from "@/lib/data"
 
 export default function Education() {
   const [isVisible, setIsVisible] = useState(false)
@@ -21,33 +22,6 @@ export default function Education() {
 
     return () => observer.disconnect()
   }, [])
-
-  const education = [
-    {
-      id: 1,
-      degree: "Bootcamp - Full Stack Developer",
-      institution: "Dumbways.id",
-      period: "2023",
-      description: "Intensive 20-week program covering modern web development technologies.",
-      achievements: ["Top Performer", "Published 3 projects"],
-    },
-    {
-      id: 2,
-      degree: "Bachelor's Degree in Management",
-      institution: "Gunadarma University",
-      period: "2018 - 2019",
-      description: "Unfinished due to financial issues.",
-      achievements: [],
-    },
-    {
-      id: 3,
-      degree: "High School Diploma",
-      institution: "1 High School Kendari",
-      period: "2015 - 2018",
-      description: "Completed with honors.",
-      achievements: ["Art Club President", "Futsal Team Captain", "Passed to College Benefit Program"],
-    },
-  ]
 
   return (
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { personalInfo } from "@/lib/data";
 
 export default function Summary() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,29 +37,14 @@ export default function Summary() {
         >
           <div className="space-y-4">
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-              Passionate, fast-learning, and results-driven Fullstack Developer
-              with strong experience in backend and frontend development using
-              Node.js, Express.js, Golang, Next.js, React.js, Vue.js, and
-              NestJS. Highly ambitious with excellent adaptability, known for
-              taking ownership of complex projects and consistently delivering
-              high-quality software solutions. A strong communicator and
-              collaborative team player with a proven track record in building
-              scalable systems, supporting production APIs, and modernizing
-              deployment workflows using GitHub Actions and AWS.
+              {personalInfo.summary}
             </p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-foreground">What I Do</h3>
             <ul className="space-y-3">
-              {[
-                "Build responsive web applications",
-                "Design and implement RESTful APIs",
-                "Develop database solutions",
-                "Optimize application performance",
-                "Implement secure authentication systems",
-                "Collaborate with teams on complex projects",
-              ].map((item, index) => (
+              {personalInfo.whatIDo.map((item, index) => (
                 <li key={index} className="flex items-start gap-3 group">
                   <span className="text-primary font-bold mt-1 group-hover:text-accent transition-colors">
                     ✓

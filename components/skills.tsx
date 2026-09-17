@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Code, Zap } from "lucide-react"
+import { skillsData } from "@/lib/data"
 
 export default function Skills() {
   const [isVisible, setIsVisible] = useState(false)
@@ -21,31 +22,6 @@ export default function Skills() {
 
     return () => observer.disconnect()
   }, [])
-
-  const hardSkills = [
-    { name: "JavaScript/TypeScript", level: 95 },
-    { name: "React & Next.js", level: 92 },
-    { name: "Node.js, Nest.js, Express", level: 95 },
-    { name: "Database Design (SQL/NoSQL)", level: 92 },
-    { name: "REST APIs & GraphQL", level: 95 },
-    { name: "HTML & CSS/Tailwind", level: 94 },
-    { name: "Git & Version Control", level: 92 },
-    { name: "Golang", level: 85 },
-  ]
-
-  const softSkills = [
-    "Problem Solving",
-    "Team Collaboration",
-    "Communication",
-    "Project Management",
-    "Adaptability",
-    "Attention to Detail",
-    "Continuous Learning",
-    "Time Management",
-    "Critical Thinking",
-    "Business Analysis",
-    "Loyalty"
-  ]
 
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -70,7 +46,7 @@ export default function Skills() {
             </div>
 
             <div className="space-y-6">
-              {hardSkills.map((skill, index) => (
+              {skillsData.hardSkills.map((skill, index) => (
                 <div key={index} className="group">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-foreground font-medium group-hover:text-primary transition-colors">
@@ -105,7 +81,7 @@ export default function Skills() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {softSkills.map((skill, index) => (
+              {skillsData.softSkills.map((skill, index) => (
                 <div
                   key={index}
                   className={`group relative p-4 rounded-lg border border-border/50 bg-background/50 hover:bg-background hover:border-accent/50 transition-all duration-300 cursor-default ${

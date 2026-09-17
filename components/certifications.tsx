@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Award, Calendar } from "lucide-react"
+import { certifications } from "@/lib/data"
 
 export default function Certifications() {
   const [isVisible, setIsVisible] = useState(false)
@@ -21,16 +22,6 @@ export default function Certifications() {
 
     return () => observer.disconnect()
   }, [])
-
-  const certifications = [
-    {
-      id: 1,
-      title: "Dumbways Certificate of Completion",
-      issuer: "Dumbways.id",
-      date: "December 2023",
-      credentialUrl: "/certificate-dumbways.pdf",
-    },
-  ]
 
   return (
     <section id="certifications" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30">
